@@ -18,6 +18,12 @@ opcoes.addEventListener('click', function (e){
     adversario = ''
     escolha = e.target.classList.value
     winner()
+    console.log({escolha})
+    if (escolha !== 'tesoura' &&
+    escolha !== 'pedra' &&
+    escolha !== 'papel' ){
+        return
+    }
     if (escolha == ''){
         location.reload()
     }
