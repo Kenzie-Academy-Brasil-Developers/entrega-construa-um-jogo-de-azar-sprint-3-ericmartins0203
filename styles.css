@@ -93,6 +93,9 @@ button{
         margin:6% 42%;
         font-size: 300%;
     }
+    h3{
+        margin-bottom: 10px;
+    }
     .vitoria{
         width:500px;
         height: 500px;
@@ -107,7 +110,8 @@ button{
     }
     section{
         flex-direction: column;
-        color: rgb(31, 80, 30);
+        color: darkgreen;
+        font-weight: 700;
         padding: 10px 10px;
     }
     #opcoes{
