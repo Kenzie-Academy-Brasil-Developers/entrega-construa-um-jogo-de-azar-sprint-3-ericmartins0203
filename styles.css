@@ -131,11 +131,13 @@ button{
         flex-direction: column;
         color: darkgreen;
         font-weight: 700;
-        padding: 10px 10px;
+        width: auto;
+        padding: 0 5%;
     }
     #opcoes{
         flex-direction: row;
         width: 100vw;
+        justify-content: space-around;
     }
     img{
         width: 200px;
