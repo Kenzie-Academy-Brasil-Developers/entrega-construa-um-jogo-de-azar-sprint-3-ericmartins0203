@@ -102,6 +102,7 @@ button{
         width:500px;
         height: 500px;
         font-size: 40px;
+        padding: 20px;
     }
     body{
         margin: 0 auto;
@@ -128,8 +129,14 @@ button{
         margin: 15px 0
     }
     button{
+        font-size: 20px;
+        border: 1px solid black;
         margin-top: 5%;
-        padding:2%;
+        padding:5%;
+    }
+    button:hover{
+        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+        box-shadow: 5px 5px 15px 5px #000000;
     }
     img:hover{
         -webkit-box-shadow: 5px 5px 15px 5px #000000; 
