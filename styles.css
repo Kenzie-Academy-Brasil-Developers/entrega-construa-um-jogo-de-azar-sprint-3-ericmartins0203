@@ -4,21 +4,43 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, summary
     box-sizing: border-box;
     list-style: none;
     list-style-type: none;
-    overflow: hidden;
-
+    overflow-x: hidden; 
+    overflow-y: hidden;
 }
 body{
     background: url('https://i1.wp.com/www.toppapeldeparede.com.br/wp-content/uploads/2021/04/Hunter-x-Hunter-Wallpaper.jpg?w=640&ssl=1'); 
     background-size:cover;
     opacity: inherit;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 h1{
-    margin:5% 28%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 350%;
 }
-
+a{
+    font-size: 22px;
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    padding: 1% 0;
+    margin: 0 auto;
+    justify-content: center;
+}
+footer{
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    color: black;
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.44);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
 #opcoes>section{
     display: flex;
     flex-direction: row;
@@ -44,6 +66,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin:0 5px
 }
 p{
@@ -142,14 +165,12 @@ button{
   }
 @media only screen and (min-width: 700px){
     h1{
-        margin:3% 42% 1% 42%;
         font-size: 400%;
     }
     h2{
         font-size: 200%;
     }
     h3{
-        margin-bottom: 70%;
         font-size: 150%;
     }
     p{
@@ -169,7 +190,7 @@ button{
         background: url('https://wallpapercave.com/wp/wp4946714.jpg'); 
         background-size: cover;
         opacity: inherit;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
     }
     #opcoes>section{
         flex-direction: column;
@@ -206,5 +227,5 @@ button{
         -webkit-box-shadow: 5px 5px 15px 5px #000000; 
         box-shadow: 5px 5px 15px 5px #000000;
     }
-   
+
 } 
