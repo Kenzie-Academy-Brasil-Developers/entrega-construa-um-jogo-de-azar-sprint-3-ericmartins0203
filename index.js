@@ -9,11 +9,11 @@ let adversario = document.createElement('p')
 
 opcoes.addEventListener('click', function (e){
     resultado.classList.add('vitoria')
+    resultado.classList.add('slide-top')
     resultado.classList.remove('hidden')
     resultado.classList.remove('empate')
     resultado.classList.remove('venceu')
     resultado.classList.remove('perdeu')
-
     resultado.innerHTML = ''
     adversario = ''
     escolha = e.target.classList.value
