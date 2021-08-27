@@ -10,7 +10,7 @@ body{
     background: url('https://i1.wp.com/www.toppapeldeparede.com.br/wp-content/uploads/2021/04/Hunter-x-Hunter-Wallpaper.jpg?w=640&ssl=1'); 
     background-size:cover;
     opacity: inherit;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
 
 h1{
@@ -60,6 +60,8 @@ img{
 }
 .vitoria{
     position: absolute;
+    left: 30%;
+    top: 30%;
     font-size: 18px;
     background-position: center;
     background-size: cover;
