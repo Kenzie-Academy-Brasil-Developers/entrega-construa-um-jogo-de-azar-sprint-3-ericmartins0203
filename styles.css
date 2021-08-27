@@ -25,7 +25,7 @@ section{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    margin: 10px 0;
+    padding: 10px 0;
 }
 
 #opcoes{
@@ -47,8 +47,8 @@ p{
 }
 img{
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
     box-shadow: 5px 5px 15px 5px #000000;
@@ -108,6 +108,7 @@ button{
     section{
         flex-direction: column;
         color: rgb(31, 80, 30);
+        padding: 10px 10px;
     }
     #opcoes{
         flex-direction: row;
@@ -120,8 +121,12 @@ button{
         box-shadow: none;
         margin: 15px 0
     }
+    button{
+        margin-top: 5%;
+    }
     img:hover{
         -webkit-box-shadow: 5px 5px 15px 5px #000000; 
         box-shadow: 5px 5px 15px 5px #000000;
     }
+   
 } 
