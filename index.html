@@ -8,18 +8,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>JOKENPO</h1>
-    <div id='opções'>
-        <h2>Faça sua escolha!</h2>
-        <div id='buttons'>
-            <select name="se" id="escolha">
-                <option value="pedra">Pedra</option>
-                <option value="papel">Papel</option>
-                <option value="tesoura">Tesoura</option>
-            </select>
-        </div>
-    </div>
+    <h1>Jajanken</h1>
+    <section id='opcoes'>
+        <section class='pedra'>
+            <div class='opcoes_titulo'>
+                <h2>Gū</h2>
+                <h3>Pedra</h3>
+            </div>
+            <p>Após concentrar aura em seu punho, Gon utiliza este poder concentrado na forma de um soco super poderoso, que fica mais forte quanto mais ele acumula energia.</p>
+            <img class='pedra' src="https://criticalhits.com.br/wp-content/uploads/2020/11/jan-ken-gu-gon-hunter-x-hunter.jpg" alt="pedra">
+
+        </section>
+        <section class='papel'>
+            <div class='opcoes_titulo'>
+                <h2>Pā</h2>
+                <h3>Papel</h3>
+            </div>
+            <p>Temos o Pā, a versão de longa distância do jajanken. Ao utilizar Nen de Emissão, Gon é capaz de disparar a energia acumulada em seu punho através da palma de sua mão.</p>
+            <img class='papel' src="https://criticalhits.com.br/wp-content/uploads/2020/11/jan-ken-pa-hunter-x-hunter-768x432.jpg" alt="papel">
+
+        </section>
+        <section class='tesoura'>
+            <div class='opcoes_titulo'>
+                <h2>Chī</h2>
+                <h3>Tesoura</h3>
+            </div>
+            <p>O Chī é a variação do Jajanken de médio alcance, e requer que Gon use Nen de transmutação para transformar sua aura em uma lâmina de energia que sai da ponta de seus dedos médio e indicador.</p>
+            <img class='tesoura' src="https://criticalhits.com.br/wp-content/uploads/2020/11/jan-ken-chi-gon-hunter-x-hunter-768x596.jpg" alt="tesoura">
+
+        </section>
+    </section>
     <div id='retorno'>
+        <button onclick="location.reload()">Jogar novament!!</button>
     </div>
     <script src="./index.js"></script>
 </body>

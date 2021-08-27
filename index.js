@@ -1,6 +1,21 @@
 const select = document.getElementById('escolha')
+const resultado = document.createElement('div')
+resultado.classList.add('vitoria')
+let opcoes = document.querySelector('#opcoes')
+let escolha = ''
+let mensagem = document.createElement('p')
+let Adversario = document.createElement('p')
 
-let escolha = document.getElementById('escolha').value
+opcoes.addEventListener('click', function (e){
+    
+    escolha = e.target.classList.value
+    winner()
+
+    resultado.append(mensagem)
+    opcoes.append(resultado)
+});
+
+
 
 function generate (){
     let robot = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
@@ -13,55 +28,67 @@ function generate (){
     if (robot == 3){
         robot = 'tesoura'
     }
-    
-    console.log('robo = ' + robot)
+    console.log('Adversário = ' + robot )
     return robot
 }
 
 function winner(){
     const robot = generate()
+    adversario = `Vocẽ escolheu ${escolha} e o adversário escolheu ${robot}.`
+    resultado.append(adversario)
     console.log('escolhido = ' + escolha)
     if ( robot == 'pedra'){
         if (escolha == 'pedra'){
-            return alert('Empate!')
+            resultado.classList.add('empate')
+            mensagem = 'Deu empate. Tente novamente.'
+            return console.log('empate')
         }
         if (escolha == 'papel'){
-            return alert("Mais sorte na próxima.")
+            resultado.classList.add('perdeu')
+            mensagem = 'Voce perdeu. Mais sorte na próxima.'
+            return console.log('perdeu')
         }
         if (escolha == 'tesoura'){
-            return alert("Você venceu!")
+            resultado.classList.add('venceu')
+            mensagem = 'Voce venceu. Meus parabéns.'
+            return console.log("venceu!")
         }
     }
     if ( robot == 'papel'){
         if (escolha == 'pedra'){
-            return alert("Você venceu!")
+            resultado.classList.add('venceu')
+            mensagem= 'Voce venceu. Meus parabéns.'
+            return console.log("venceu!")
         }
         if (escolha == 'papel'){
-            return alert("Empate.")
+            resultado.classList.add('empate')
+            mensagem = 'Deu empate. Tente novamente.'
+            return console.log('empate')
         }
         if (escolha == 'tesoura'){
-            return alert("Mais sorte na próxima.")
+            resultado.classList.add('perdeu')
+            mensagem = 'Voce perdeu. Mais sorte na próxima.'
+            return console.log('perdeu')
         }
     }
     if ( robot == 'tesoura'){
         if (escolha == 'pedra'){
-            return alert('Mais sorte na próxima.')
+            resultado.classList.add('perdeu')
+            mensagem = 'Voce perdeu. Mais sorte na próxima.'
+            return console.log('perdeu')
         }
         if (escolha == 'papel'){
-            return alert("Você venceu!")
+            resultado.classList.add('venceu')
+            mensagem= 'Voce venceu. Meus parabéns.'
+            return console.log("venceu!")
         }
         if (escolha == 'tesoura'){
-            return alert("Empate.")
+            resultado.classList.add('empate')
+            mensagem= 'Deu empate. Tente novamente.'
+            return console.log('empate')
         }
     }
 } 
-
-select.addEventListener('click',function(){
-    winner()
-
-})
-
-
 
 
 
