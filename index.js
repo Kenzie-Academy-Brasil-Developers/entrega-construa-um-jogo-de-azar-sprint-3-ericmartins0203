@@ -34,7 +34,7 @@ function generate (){
 
 function winner(){
     const robot = generate()
-    adversario = `Vocẽ escolheu ${escolha} e o adversário escolheu ${robot}.`
+    adversario = `Você escolheu ${escolha} e o adversário escolheu ${robot}.`
     resultado.append(adversario)
     console.log('escolhido = ' + escolha)
     if ( robot == 'pedra'){
@@ -50,14 +50,14 @@ function winner(){
         }
         if (escolha == 'tesoura'){
             resultado.classList.add('venceu')
-            mensagem = 'Voce venceu. Meus parabéns.'
+            mensagem = 'Voce venceu. Meus parabéns!'
             return console.log("venceu!")
         }
     }
     if ( robot == 'papel'){
         if (escolha == 'pedra'){
             resultado.classList.add('venceu')
-            mensagem= 'Voce venceu. Meus parabéns.'
+            mensagem= 'Voce venceu. Meus parabéns!'
             return console.log("venceu!")
         }
         if (escolha == 'papel'){
@@ -79,7 +79,7 @@ function winner(){
         }
         if (escolha == 'papel'){
             resultado.classList.add('venceu')
-            mensagem= 'Voce venceu. Meus parabéns.'
+            mensagem= 'Voce venceu. Meus parabéns!'
             return console.log("venceu!")
         }
         if (escolha == 'tesoura'){
