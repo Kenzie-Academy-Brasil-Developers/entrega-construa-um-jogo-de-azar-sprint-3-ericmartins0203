@@ -1,20 +1,21 @@
-const select = document.getElementById('escolha')
 const resultado = document.createElement('div')
 const btn = document.createElement('button')
-btn.innerHTML = 'Jogar Novament!'
+btn.innerHTML = 'Jogar Novamente!'
 btn.onclick = "location.reload()"
-resultado.classList.add('vitoria')
 let opcoes = document.querySelector('#opcoes')
 let escolha = ''
 let mensagem = document.createElement('p')
-let Adversario = document.createElement('p')
+let adversario = document.createElement('p')
 
 opcoes.addEventListener('click', function (e){
     resultado.classList.add('vitoria')
+    resultado.classList.remove('empate')
+    resultado.classList.remove('venceu')
+    resultado.classList.remove('perdeu')
+
     resultado.innerHTML = ''
-    Adversario = ''
+    adversario = ''
     escolha = e.target.classList.value
-    console.log(escolha)
     winner()
     if (escolha == ''){
         location.reload()
@@ -22,8 +23,6 @@ opcoes.addEventListener('click', function (e){
     resultado.append(mensagem)
     opcoes.append(resultado)
 });
-
-
 
 function generate (){
     let robot = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
@@ -35,7 +34,9 @@ function generate (){
 }
 
 function winner(){
-    const robot = generate()
+    let robot = ''
+    robot = generate()
+    console.log({robot})
     adversario = `Você escolheu ${escolha} e o adversário escolheu ${robot}.`
     resultado.append(adversario)
     resultado.appendChild(btn)
@@ -94,8 +95,3 @@ function winner(){
         }
     }
 } 
-
-
-
-
-
