@@ -10,22 +10,28 @@ body{
     background: url('https://i1.wp.com/www.toppapeldeparede.com.br/wp-content/uploads/2021/04/Hunter-x-Hunter-Wallpaper.jpg?w=640&ssl=1'); 
     background-size:cover;
     opacity: inherit;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 h1{
-    margin:10% 28%;
-    font-size: 300%;
+    margin:5% 28%;
+    font-size: 350%;
 }
 
-section{
+#opcoes>section{
     display: flex;
     flex-direction: row;
-    color: whitesmoke;
+    color: darkgreen;
     align-items: center;
     justify-content: center;
     width: 100vw;
     padding: 10px 0;
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.44);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    margin: 5%
 }
 
 #opcoes{
@@ -34,8 +40,6 @@ section{
     flex-wrap: nowrap;
     align-content: center;
     width: 100vw;
-    border: 1px solid whitesmoke
-
 }
 .opcoes_titulo{
     display: flex;
@@ -95,8 +99,18 @@ button{
         margin:6% 42%;
         font-size: 300%;
     }
+    h2{
+        font-size: 200%;
+    }
     h3{
-        margin-bottom: 10px;
+        margin-bottom: 70%;
+        font-size: 150%;
+    }
+    p{
+        font-size: 130%;
+    }
+    .papel p{
+        margin: 7% 0;
     }
     .vitoria{
         width:500px;
@@ -111,7 +125,7 @@ button{
         opacity: inherit;
         background-repeat: no-repeat;
     }
-    section{
+    #opcoes>section{
         flex-direction: column;
         color: darkgreen;
         font-weight: 700;
