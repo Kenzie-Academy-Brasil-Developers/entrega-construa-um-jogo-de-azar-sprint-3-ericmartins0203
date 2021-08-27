@@ -1,7 +1,7 @@
 const resultado = document.createElement('div')
 const btn = document.createElement('button')
 btn.innerHTML = 'Jogar Novamente!'
-btn.onclick = "location.reload()"
+btn.onclick = resultado.classList.add('hidden')
 let opcoes = document.querySelector('#opcoes')
 let escolha = ''
 let mensagem = document.createElement('p')
@@ -9,6 +9,7 @@ let adversario = document.createElement('p')
 
 opcoes.addEventListener('click', function (e){
     resultado.classList.add('vitoria')
+    resultado.classList.remove('hidden')
     resultado.classList.remove('empate')
     resultado.classList.remove('venceu')
     resultado.classList.remove('perdeu')
